@@ -1,0 +1,20 @@
+/* The textarea is borderless and transparent, but its focus ring drew a second
+   box inside the bordered .comment-box__main, making it look like a box within
+   a box. Drop the textarea's own ring and put the focus indication on the box
+   itself so it reads as a single field. */
+textarea.comment-box__textarea:focus,
+textarea.comment-box__textarea:focus-visible {
+  outline: none !important;
+}
+
+.comment-box__main:focus-within {
+  outline: 2px solid rgba(34, 211, 238, 0.7) !important;
+  outline-offset: -1px !important;
+}
+
+/* The "Upload resume" button sits beside the note box and is vertically
+   centered, so it rides up as the box grows. Pin it to the bottom of the
+   compose row instead. */
+.comment-box__upload-resume-container {
+  align-self: flex-end !important;
+}

@@ -1,0 +1,21 @@
+{
+  "name": "refined-recurse",
+  "description": "Small quality-of-life tweaks for recurse.com",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "wxt",
+    "dev:firefox": "wxt -b firefox",
+    "build": "wxt zip",
+    "build:firefox": "wxt zip -b firefox",
+    "zip": "wxt zip",
+    "zip:firefox": "wxt zip -b firefox",
+    "submit:init": "wxt submit init",
+    "submit": "wxt zip && wxt submit --chrome-zip .output/*-chrome.zip",
+    "postinstall": "wxt prepare"
+  },
+  "devDependencies": {
+    "wxt": "^0.20.27"
+  }
+}
