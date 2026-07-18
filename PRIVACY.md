@@ -33,4 +33,4 @@ If this policy changes, the updated version will be posted at this URL with a ne
 
 ## Contact
 
-Questions? Email frank@frankchiarulli.com.
+Questions? Email support@leftshift.com.

@@ -4,6 +4,7 @@
   "private": true,
   "version": "0.1.0",
   "type": "module",
+  "license": "Apache-2.0",
   "scripts": {
     "dev": "wxt",
     "dev:firefox": "wxt -b firefox",
@@ -12,7 +13,7 @@
     "zip": "wxt zip",
     "zip:firefox": "wxt zip -b firefox",
     "submit:init": "wxt submit init",
-    "submit": "wxt zip && wxt submit --chrome-zip .output/*-chrome.zip",
+    "submit": "wxt zip && wxt zip -b firefox && wxt submit --chrome-zip .output/*-chrome.zip --firefox-zip .output/*-firefox.zip --firefox-sources-zip .output/*-sources.zip",
     "postinstall": "wxt prepare"
   },
   "devDependencies": {

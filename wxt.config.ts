@@ -4,7 +4,18 @@ export default defineConfig({
   manifest: {
     name: 'Refined Recurse',
     description: 'Small quality-of-life tweaks for recurse.com.',
+    author: 'Left Shift Logical LLC',
     // No host_permissions needed — the content script only runs on recurse.com.
+    // Firefox requires an explicit data collection disclosure; this extension
+    // collects none. Chrome ignores browser_specific_settings.
+    browser_specific_settings: {
+      gecko: {
+        id: 'refined-recurse@leftshift.com',
+        data_collection_permissions: {
+          required: ['none'],
+        },
+      },
+    },
     icons: {
       16: '/icon/16.png',
       32: '/icon/32.png',
