@@ -17,6 +17,6 @@
     "postinstall": "wxt prepare"
   },
   "devDependencies": {
-    "wxt": "^0.20.27"
+    "wxt": "^0.21.4"
   }
 }
